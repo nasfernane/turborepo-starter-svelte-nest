@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-svelte": "^3.2.2",
+    "turbo": "latest"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@10.2.4",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {
+    "@nestjs/common": "^10.3.8",
+    "@nestjs/core": "^10.3.8",
+    "reflect-metadata": "^0.2.2"
+  }
+}
